@@ -69,7 +69,7 @@ const Editor = () => {
     fetchData();
   }
   ReactModal.setAppElement("#modalRoot");
-  console.log(Object.keys(updateUserData).length === 0, updateUserData);
+  // console.log(Object.keys(updateUserData).length === 0, updateUserData);
   return (
     <div id="modalRoot">
       <ReactModal

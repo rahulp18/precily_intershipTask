@@ -13,6 +13,7 @@ const Form = ({ handleChange, handleSubmit, user, type }) => {
           onChange={handleChange}
           placeholder="Enter name"
           value={user.name}
+          required
           className="border-none outline-none bg-white text-black px-2 py-3"
         />
       </div>
@@ -22,6 +23,7 @@ const Form = ({ handleChange, handleSubmit, user, type }) => {
         <input
           name="role"
           value={user.role}
+          required
           onChange={handleChange}
           placeholder="Enter role name"
           className="border-none outline-none bg-white text-black px-2 py-3"
@@ -33,6 +35,7 @@ const Form = ({ handleChange, handleSubmit, user, type }) => {
           name="profile"
           value={user.profile}
           onChange={handleChange}
+          required
           placeholder="Copy image address"
           type="text"
           className="border-none outline-none   text-black px-2 py-3"

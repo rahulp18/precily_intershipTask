@@ -17,12 +17,12 @@ const Update = ({ updateId, updateUserData, type, closeModal }) => {
     setUserData(res.data);
     SetUser(initialState);
   };
-  console.log(user);
+  // console.log(user);
   const handleChange = (e) => {
     SetUser({ ...user, [e.target.name]: e.target.value });
   };
   return (
-    <div className="">
+    <div className="p-4">
       <Form
         type={type}
         user={user}
